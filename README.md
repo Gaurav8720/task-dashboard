@@ -1,131 +1,36 @@
-# Task Manager App
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A simple Task Manager CRUD application built using Next.js, TypeScript, Tailwind CSS, Prisma, and PostgreSQL.
+## Getting Started
 
----
-
-# Features
-
-- Add new tasks
-- View all tasks
-- Edit existing tasks
-- Delete tasks
-- Responsive UI
-- PostgreSQL database integration
-
----
-
-# Tech Stack
-
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Prisma ORM
-- PostgreSQL
-
----
-
-# Project Structure
-
-```bash
-src/
-│
-├── app/
-│   ├── components/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
-│
-├── actions/
-│   └── taskActions.ts
-│
-├── lib/
-│   └── prisma.ts
-```
-
----
-
-# Setup Instructions
-
-## 1. Clone Repository
-
-```bash
-git clone <your-repository-link>
-```
-
----
-
-## 2. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-## 3. Setup Environment Variables
-
-Create a `.env` file in the root folder.
-
-Example:
-
-```env
-DATABASE_URL="postgresql://postgres:password@localhost:5432/dashboard_db?schema=public"
-```
-
----
-
-## 4. Generate Prisma Client
-
-```bash
-npx prisma generate
-```
-
----
-
-## 5. Push Database Schema
-
-```bash
-npx prisma db push
-```
-
----
-
-## 6. Run Development Server
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Prisma Commands
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Generate Prisma Client
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-npx prisma generate
-```
+## Learn More
 
-## Open Prisma Studio
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-npx prisma studio
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-# CRUD Operations
+## Deploy on Vercel
 
-| Operation | Status |
-|----------|----------|
-| Create Task | ✅ |
-| Read Tasks | ✅ |
-| Update Task | ✅ |
-| Delete Task | ✅ |
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-# Author
-
-Developed by Gaurav
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
